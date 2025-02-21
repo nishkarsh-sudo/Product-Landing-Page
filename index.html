@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <input type="checkbox" id="theme-switch" class="theme-switch">
+
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <header role="banner" class="sticky-nav">
+            <nav role="navigation" class="nav-container">
+                <div class="logo">
+                    <picture>
+                        <source srcset="logo.svg" type="image/svg+xml">
+                        <img src="logo.png" alt="Logo">
+                    </picture>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label for="theme-switch" class="theme-switch-label" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </label>
+            </nav>
+        </header>
+
+        <main role="main" id="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1>Transform Your Business with Our Solution</h1>
+                    <p>Empower your workflow with cutting-edge tools designed for modern teams.</p>
+                    <div class="math-example">
+                        <h2>Advanced Mathematical Capabilities</h2>
+                        <p>For example, the quadratic formula:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mo>−</mo>
+                                    <mi>b</mi>
+                                    <mo>±</mo>
+                                    <msqrt>
+                                        <msup>
+                                            <mi>b</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>−</mo>
+                                        <mn>4</mn>
+                                        <mi>a</mi>
+                                        <mi>c</mi>
+                                    </msqrt>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                    <mi>a</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </div>
+                    <button class="pricing-button">Get Started →</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                        alt="Team collaborating on a project" loading="lazy">
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Seamless Integration</h3>
+                        <p>Connect with your favorite tools effortlessly.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Real-time Collaboration</h3>
+                        <p>Work together with your team in real-time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Advanced Analytics</h3>
+                        <p>Get insights that matter for your business.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section id="pricing" class="pricing-section">
+                <h2>Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <p class="price">$19/mo</p>
+                        <ul class="features-list">
+                            <li>✔ Access to core features</li>
+                            <li>✔ 5GB Cloud Storage</li>
+                            <li>✔ Email Support</li>
+                            <li>✔ Customizable Dashboard</li>
+                            <li>✔ Dedicated Account Manager</li>
+                        </ul>
+                        <button class="pricing-button">Choose Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Standard</h3>
+                        <p class="price">$49/mo</p>
+                        <ul class="features-list">
+                            <li>✔ Everything in Basic</li>
+                            <li>✔ 50GB Cloud Storage</li>
+                            <li>✔ Priority Email Support</li>
+                            <li>✔ Customizable Dashboard</li>
+                            <li>✔ Dedicated Account Manager</li>
+                        </ul>
+                        <button class="pricing-button">Choose Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <p class="price">$99/mo</p>
+                        <ul class="features-list">
+                            <li>✔ Everything in Standard</li>
+                            <li>✔ Unlimited Cloud Storage</li>
+                            <li>✔ 24/7 Support</li>
+                            <li>✔ Advanced Analytics</li>
+                            <li>✔ Dedicated Account Manager</li>
+                        </ul>
+                        <button class="pricing-button">Choose Plan</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required aria-required="true" aria-labelledby="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required aria-required="true" aria-labelledby="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required aria-required="true" aria-labelledby="message"></textarea>
+                    </div>
+                    <button type="submit" class="pricing-button">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
