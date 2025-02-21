@@ -1,4 +1,4 @@
-Project Overview: Web Development - Simple Web Page Project Name: Simple Web Page Development
+Project Overview: Web Development :- Simple Web Page Development
 
 . Project Objective The aim of this project was to create a modern, responsive website that incorporates essential elements like navigation, a hero section, pricing details, and a contact form. The primary goal was to develop an intuitive and user-friendly website, ensuring both functionality and aesthetic appeal.
 
